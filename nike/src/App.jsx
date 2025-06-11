@@ -1,8 +1,9 @@
 import React from "react"
+import Header from './components/header/index'
 function App() {
   return (
     <>
-     <h1>Nike</h1>
+     <Header/>
     </>
   )
 }
