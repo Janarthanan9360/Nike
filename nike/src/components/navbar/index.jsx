@@ -1,10 +1,9 @@
 import React from "react";
 import nikiLogo from "../../assets/icons/nike.png";
-import search from "../../assets/icons/search.png";
 import wishlist from "../../assets/icons/wishlist.png";
 import cart from "../../assets/icons/cart.png";
 import '@fontsource/roboto/700.css';
-
+import SearchModal from "../modal/searchmodal";
 const NavigationBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ fontFamily: 'Roboto, sans-serif' }}>
@@ -34,9 +33,9 @@ const NavigationBar = () => {
         <a className="navbar-brand" href="#">
           <img src={wishlist} width="25" height="25" alt="Wishlist" />
         </a>
-        <a className="navbar-brand" href="#">
-          <img src={search} width="20" height="20" alt="Search" />
-        </a>
+        <div>
+          <SearchModal />
+        </div>
         <a className="navbar-brand" href="#">
           <img src={cart} width="25" height="25" alt="Cart" />
         </a>
