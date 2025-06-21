@@ -1,0 +1,25 @@
+.static-banner-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 75%;
+}
+.static-banner-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.static-banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.static-banner-img-container{
+    width: 100%;
+    img {
+        border-radius: 10px;
+        width: 90%;
+    }
+}

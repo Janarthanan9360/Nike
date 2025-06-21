@@ -1,12 +1,15 @@
 import React from "react"
-import Header from './components/header/index'
-import BannerCard from "./components/bannercard"
+import Home from './pages/home'
+
+import { BrowserRouter,Routes,Route } from "react-router-dom"
 function App() {
   return (
-    <>
-     <Header/>
-     <BannerCard/>
-    </>
+      <BrowserRouter>
+          <Routes>
+              <Route path="/home" Component={Home}/>
+              <Route path="/" Component={Home}/>
+          </Routes>
+      </BrowserRouter>
   )
 }
 

@@ -4,7 +4,7 @@ import "./BannerCard.css";
 const BannerCard = () => {
 return (
     <div className="banner-container">
-        <div className="banner-image">
+        <div className="banner-image-container">
             <img src={Mainbanner} alt="main-banner" />
         </div>
     </div>
